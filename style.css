@@ -1,0 +1,362 @@
+/* ===========================
+   Global Theme Variables
+=========================== */
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #0f1720;
+  --muted: #556277;
+  --accent: #4e73df;
+  --accent-2: #6c9bff;
+  --accent-cta: #ffcc00;
+  --glass: rgba(255, 255, 255, 0.6);
+}
+
+html.dark {
+  --bg: #0b1220;
+  --card: #07122a;
+  --text: #e6eefc;
+  --muted: #9fb1d6;
+  --accent: #7aa1ff;
+  --accent-2: #4e73df;
+  --accent-cta: #ffcc00;
+  --glass: rgba(255, 255, 255, 0.04);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===========================
+   Header
+=========================== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+html.dark .site-header {
+  background: rgba(7,18,42,0.5);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 64px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 22px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+.theme-toggle {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ===========================
+   HERO Banner (Centered)
+=========================== */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+.hero-banner .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.65);
+}
+
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.45)
+  );
+}
+
+.hero-content {
+  position: absolute;
+  text-align: center;
+  max-width: 900px;
+  padding: 20px;
+  color: white;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  opacity: 0.92;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: var(--accent-cta);
+  color: #000;
+}
+
+.btn.ghost {
+  border: 2px solid rgba(255,255,255,0.6);
+  color: white;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 16px;
+}
+
+.hero-stats div {
+  text-align: center;
+  color: white;
+}
+
+.hero-stats strong {
+  font-size: 22px;
+  display: block;
+}
+
+/* ===========================
+   Sections
+=========================== */
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* ===========================
+   Features (1-row layout)
+=========================== */
+.single-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: nowrap;
+}
+
+.card {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 14px;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+}
+
+.card-icon {
+  width: 90px;
+  margin-bottom: 12px;
+}
+
+/* ===========================
+   Tools Grid with animations
+=========================== */
+.tools-grid {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tool {
+  background: var(--card);
+  padding: 12px;
+  width: 160px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.tool:hover {
+  transform: translateY(-8px) scale(1.06);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+}
+
+.tool img {
+  width: 42px;
+  height: 42px;
+}
+
+/* ===========================
+   Blog Cards
+=========================== */
+.blog-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post {
+  width: 330px;
+  background: var(--card);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* ===========================
+   About & Contact
+=========================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+}
+
+.skills ul {
+  padding-left: 18px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.site-footer {
+  background: var(--card);
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 42px;
+}
+
+/* ===========================
+   Reveal Animation
+=========================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 900px) {
+  .main-nav { display: none; }
+
+  .single-row {
+    flex-direction: column;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

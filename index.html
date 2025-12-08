@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KMC DevOps</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="assets/logo.png" alt="KMC DevOps" class="logo" />
+    </div>
+
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#tools">Tools</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </div>
+</header>
+
+<!-- HERO FULL BANNER -->
+<section id="home" class="hero hero-banner">
+  <img src="assets/hero.png" alt="DevOps Banner" class="hero-img" />
+
+  <div class="hero-gradient"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span id="typed"></span>
+    </h1>
+
+    <p class="hero-sub">
+      Streamlining your DevOps processes with cloud-native tools, CI/CD automation & observability.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn primary" href="#features">Explore More</a>
+      <a class="btn ghost" href="#blog">Read Blog</a>
+    </div>
+
+    <div class="hero-stats">
+      <div><strong>10+</strong><span>Projects</span></div>
+      <div><strong>5+</strong><span>Cloud Providers</span></div>
+      <div><strong>100%</strong><span>CI/CD</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <div class="container">
+    <h2 class="section-title reveal">DevOps Roadmap — What you will master</h2>
+
+    <div class="cards-grid single-row">
+      <article class="card reveal">
+        <img class="card-icon" src="assets/feature1.png" alt="" />
+        <h3>CI / CD Pipelines</h3>
+        <p>Create automated pipelines with Jenkins, GitHub Actions, ArgoCD & Tekton.</p>
+      </article>
+
+      <article class="card reveal">
+        <img class="card-icon" src="assets/feature2.png" alt="" />
+        <h3>Infrastructure & Kubernetes</h3>
+        <p>Design infra with Terraform, Helm & deploy apps to GKE, EKS & AKS.</p>
+      </article>
+
+      <article class="card reveal">
+        <img class="card-icon" src="assets/feature3.png" alt="" />
+        <h3>Monitoring, Security & Ops</h3>
+        <p>Implement observability, secret management & policy-driven cloud operations.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="section light">
+  <div class="container">
+    <h2 class="section-title reveal">DevOps Tools</h2>
+    <div class="tools-grid reveal">
+      <div class="tool"><img src="assets/tool-docker.png" /><span>Docker</span></div>
+      <div class="tool"><img src="assets/tool-k8s.png" /><span>Kubernetes</span></div>
+      <div class="tool"><img src="assets/tool-jenkins.png" /><span>Jenkins</span></div>
+      <div class="tool"><img src="assets/tool-terraform.png" /><span>Terraform</span></div>
+      <div class="tool"><img src="assets/tool-aws.png" /><span>AWS</span></div>
+      <div class="tool"><img src="assets/tool-gcp.png" /><span>GCP</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Recent Posts</h2>
+
+    <div class="blog-grid">
+      <article class="post reveal">
+        <h3>Production-ready CI/CD Pipeline</h3>
+        <p>Git branching, pipeline stages, artifact storage & deployment patterns.</p>
+        <a href="#">Read more →</a>
+      </article>
+
+      <article class="post reveal">
+        <h3>Kubernetes: From Dev to Production</h3>
+        <p>Namespaces, Ingress, RBAC, Autoscaling & optimal cluster design.</p>
+        <a href="#">Read more →</a>
+      </article>
+
+      <article class="post reveal">
+        <h3>Infrastructure as Code: Best Practices</h3>
+        <p>Modular Terraform, remote state, testing & drift prevention.</p>
+        <a href="#">Read more →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section light">
+  <div class="container">
+    <h2 class="section-title reveal">About</h2>
+
+    <div class="about-grid reveal">
+      <div class="about-left">
+        <p><strong>Experienced DevOps Engineer</strong> with hands-on expertise across CI/CD, Kubernetes, Cloud, Terraform and automation.</p>
+        <p>I help teams build scalable, secure, cloud-native architectures with strong observability & reliability engineering practices.</p>
+        <p>I specialize in designing end-to-end delivery pipelines, implementing GitOps workflows, and modernizing legacy infrastructures into fully automated cloud environments.
+With a strong focus on platform engineering, I create reusable, production-ready frameworks that improve deployment speed, reduce operational friction and ensure consistent environments across teams.</p>
+        <p>I am passionate about SRE principles—building systems that are not only fast and automated, but also resilient, observable and cost-efficient.</p>
+        <p>My work often involves bridging development and operations, enabling teams to ship high-quality software faster and more reliably</p>
+      </div>
+
+      <div class="skills">
+        <h4>Skills</h4>
+        <ul>
+          <li>Linux, Git</li>
+          <li>Scripting</li>
+          <li>Maven, Sonarqube, Jfrog</li>
+          <li>CI/CD (Jenkins, GitHub Actions)</li>
+          <li>Kubernetes, Docker</li>
+          <li>Terraform, Helm</li>
+          <li>Ansible</li>
+          <li>Monitoring (Prometheus, Grafana)</li>
+          <li>Cloud (AWS, GCP)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container contact-grid reveal">
+    <div>
+      <h2>Contact</h2>
+      <p><strong>Address:</strong> Koramangala, Bangalore</p>
+      <p><strong>Phone:</strong> 99999-99999</p>
+      <p><strong>Email:</strong> contact@kmc-info.online</p>
+    </div>
+
+    <form class="contact-form">
+      <label>Name<input type="text" placeholder="Your name" required /></label>
+      <label>Email<input type="email" placeholder="you@example.com" required /></label>
+      <label>Message<textarea rows="4" placeholder="Your message"></textarea></label>
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="assets/logo.png" class="footer-logo" />
+    <p>© 2025 KMC DevOps — Built with ☁️ & ❤️</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+  new Typed('#typed', {
+    strings: ['Welcome to KMC DevOps'],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
