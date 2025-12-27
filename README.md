@@ -1,1 +1,1 @@
-Website created through GCP bucket www.kmc-info.online
+Website created through Google cloud Platform bucket www.kmc-info.online
