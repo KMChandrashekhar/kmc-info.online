@@ -1,1 +1,1 @@
-Static Website created through Google cloud Platform bucket www.kmc-info.online
+Static Website created through Google cloud Platform bucket kmc-info.online
